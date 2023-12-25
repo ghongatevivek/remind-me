@@ -15,7 +15,8 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('reminder_type_id');
             $table->string('title','50');
-            $table->text('description');
+            $table->text('information');
+            $table->tinyInteger('status')->def
             $table->timestamps();
             $table->softDeletes();
         });
